@@ -70,4 +70,31 @@ public class UserService implements IUserService {
 		userRepository.save(user);
 	}
 
+	@Override
+	public List<User> findByloginUser(String loginUser) {
+		return userRepository.findByloginUser(loginUser);
+	}
+
+	@Override
+	public boolean existsUserByloginUser(String loginUser) {
+		return userRepository.existsUserByloginUser(loginUser);
+	}
+
+	@Override
+	public User findByLoginUserAndPwdUser(String login, String password) {
+		User user2 = new User();
+		User user = userRepository.findByLoginUserAndPwdUser(login, password);
+		if (user != null) {
+			user2.setIdUser(user.getIdUser());
+			user2.setLoginUser(user.getLoginUser());
+			user2.setEmailUser(user.getEmailUser());
+			user2.setNomUser(user.getNomUser());
+			user2.setPrenomUser(user.getPrenomUser());
+			user2.setRoleUser(user.getRoleUser());
+			user2.setSecteurUser(user.getSecteurUser());
+			return user2;
+		}
+		return user2;
+	}
+
 }

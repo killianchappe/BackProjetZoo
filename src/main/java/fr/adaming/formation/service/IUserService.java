@@ -19,4 +19,10 @@ public interface IUserService {
 
 	public void setSecteur(long idUser, long idSecteur);
 
+	public List<User> findByloginUser(String loginUser);
+
+	public boolean existsUserByloginUser(String loginUser);
+
+	public User findByLoginUserAndPwdUser(String login, String password);
+
 }

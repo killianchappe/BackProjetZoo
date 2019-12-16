@@ -1,45 +1,28 @@
 package fr.adaming.formation;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import fr.adaming.formation.model.Animal;
-import fr.adaming.formation.model.Enclos;
-import fr.adaming.formation.model.Etat;
-import fr.adaming.formation.model.Nourriture;
-import fr.adaming.formation.model.Role;
-import fr.adaming.formation.model.Secteur;
-import fr.adaming.formation.model.Tache;
-import fr.adaming.formation.model.User;
-import fr.adaming.formation.service.IAnimalService;
-import fr.adaming.formation.service.IEnclosService;
-import fr.adaming.formation.service.IEtatService;
-import fr.adaming.formation.service.INourritureService;
-import fr.adaming.formation.service.IRoleService;
-import fr.adaming.formation.service.ISecteurService;
-import fr.adaming.formation.service.ITacheService;
-import fr.adaming.formation.service.IUserService;
 
 @SpringBootApplication
 public class ProjetZooApplication implements CommandLineRunner {
 
-	@Autowired
-	IRoleService roleService;
-	@Autowired
-	IUserService userService;
-	@Autowired
-	ITacheService tacheService;
-	@Autowired
-	IEtatService etatService;
-	@Autowired
-	ISecteurService secteurService;
-	@Autowired
-	IEnclosService enclosService;
-	@Autowired
-	IAnimalService animalService;
-	@Autowired
-	INourritureService nourritureService;
+//	@Autowired
+//	IRoleService roleService;
+//	@Autowired
+//	IUserService userService;
+//	@Autowired
+//	ITacheService tacheService;
+//	@Autowired
+//	IEtatService etatService;
+//	@Autowired
+//	ISecteurService secteurService;
+//	@Autowired
+//	IEnclosService enclosService;
+//	@Autowired
+//	IAnimalService animalService;
+//	@Autowired
+//	INourritureService nourritureService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetZooApplication.class, args);

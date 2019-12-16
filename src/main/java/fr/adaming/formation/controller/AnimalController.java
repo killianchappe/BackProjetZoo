@@ -59,12 +59,12 @@ public class AnimalController {
 		return true;
 	}
 
-	@PutMapping("{idAnimal}/setUser/{idEnclos}")
+	@PutMapping("{idAnimal}/setEnclos/{idEnclos}")
 	public void setEnclos(@PathVariable long idAnimal, @PathVariable long idEnclos) {
 		animalService.setEnclos(idAnimal, idEnclos);
 	}
 
-	@PutMapping("{idAnimal}/setEtat/{idNourriture}")
+	@PutMapping("{idAnimal}/setNourriture/{idNourriture}")
 	public void setNourriture(@PathVariable long idAnimal, @PathVariable long idNourriture) {
 		animalService.setNourriture(idAnimal, idNourriture);
 	}
